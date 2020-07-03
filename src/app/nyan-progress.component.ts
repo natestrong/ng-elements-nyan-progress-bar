@@ -1,13 +1,15 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   // selector: 'nyan-progress',
   template: `
-    Hi there!
+    progress: {{ progress }}
   `,
   styles: []
 })
 export class NyanProgressComponent implements OnInit {
+  @Input() progress: number;
+
   constructor() {
   }
 
